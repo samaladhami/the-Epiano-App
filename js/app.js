@@ -7,8 +7,21 @@ angular.module('ePiano' ,["ui.router"])
     ,templateUrl: './js/templates/homeTemp.html'
   })
 
+
   .state('play' , {
     url: '/play'
     ,templateUrl: './js/templates/playTemp.html'
+    , controller: 'ePianoCtrl'
   })
+  .state('tutorial' , {
+    url: '/tutorial'
+    ,templateUrl: './js/templates/tutorialTemp.html'
+
+  })
+
+  .state('about' , {
+    url: '/about'
+    ,templateUrl: './js/templates/aboutTemp.html'
+
+    })
 })

@@ -26,6 +26,14 @@ header {
 .logo {
   height: 85px;
 }
+.logo:hover{
+  cursor: pointer;
+  cursor: hand;
+}
+.dancing-tone:hover{
+  cursor: pointer;
+  cursor: hand;
+}
 
 .nav-content {
   color:  #EDF2F4;
@@ -41,6 +49,8 @@ header {
 
 .nav-content:hover{
   background-color: #FF8322;
+  cursor: pointer;
+  cursor: hand;
 }
 
 .nav-contener {
@@ -85,6 +95,8 @@ section {
 .piano-div{
   padding-top: 199px;
   padding-bottom: 122px;
+  padding-top: 266px;
+    padding-bottom: 290px;
 }
 .piano-dash-bord{
 

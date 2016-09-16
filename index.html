@@ -5,27 +5,27 @@
     <title>The Epiano App</title>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   </head>
-  <body ng-controller='ePianoCtrl'>
+  <body >
     <div id='page'>
       <header>
         <div class="main-header">
           <div class="nav-contener">
             <div>
-              <img class='logo' src="./img/logo_headerB.jpg" alt="" />
+              <img class='logo' src="./img/logo_headerB.jpg" alt="" ui-sref="home"/>
             </div>
 
             <div class="nav-right">
               <div class="nav-content">
 
 
-                <div class="menu-items">PLAY</div>
+                <div class="menu-items" ui-sref="play">PLAY</div>
 
               </div>
-              <div class="nav-content">
+              <div class="nav-content" ui-sref="tutorial">
                 <div class="menu-items">TUTORIAL</div>
               </div>
               <div class="nav-content">
-                <div class="menu-items">ABUOT</div>
+                <div class="menu-items" ui-sref="about">ABOUT</div>
               </div>
               <img class='dancing-tone' src="https://media4.giphy.com/media/IXnygGeB6LPPi/200w.gif" alt="" />
 
@@ -57,6 +57,7 @@
 <script src="./js/app.js" charset="utf-8"></script>
 <script src="./js/epianoCtrl.js" charset="utf-8"></script>
 <script src="./js/servic.js" charset="utf-8"></script>
+<script src="./js/tutorialDirective.js" charset="utf-8"></script>
 
 
   </body>
