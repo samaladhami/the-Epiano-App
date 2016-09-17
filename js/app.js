@@ -1,9 +1,10 @@
-angular.module('ePiano' ,["ui.router"])
+angular.module('ePiano' ,["ui.router" , 'ngGrid' ])
 .config(function($stateProvider , $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
   $stateProvider
   .state('home' , {
     url: '/'
+
     ,templateUrl: './js/templates/homeTemp.html'
   })
 
@@ -16,6 +17,15 @@ angular.module('ePiano' ,["ui.router"])
   .state('tutorial' , {
     url: '/tutorial'
     ,templateUrl: './js/templates/tutorialTemp.html'
+
+
+  })
+
+  .state('listen' , {
+    url: '/listen'
+    ,templateUrl: './js/templates/listenTemp.html'
+    // , controller:
+
 
   })
 

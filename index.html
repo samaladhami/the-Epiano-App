@@ -3,7 +3,12 @@
   <head>
 
     <title>The Epiano App</title>
+    <!-- the links form itunes-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/ng-grid/2.0.11/ng-grid.min.css">
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+         <!-- ends there-->
   </head>
   <body >
     <div id='page'>
@@ -24,10 +29,13 @@
               <div class="nav-content" ui-sref="tutorial">
                 <div class="menu-items">TUTORIAL</div>
               </div>
+              <div class="nav-content" ui-sref="listen">
+                <div class="menu-items">LISTEN</div>
+              </div>
               <div class="nav-content">
                 <div class="menu-items" ui-sref="about">ABOUT</div>
               </div>
-              <img class='dancing-tone' src="https://media4.giphy.com/media/IXnygGeB6LPPi/200w.gif" alt="" />
+              <img ui-sref="home" class='dancing-tone' src="https://media4.giphy.com/media/IXnygGeB6LPPi/200w.gif" alt="" />
 
             </div>
             </div>
@@ -53,11 +61,15 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js" charset="utf-8"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ng-grid/2.0.11/ng-grid.min.js"></script>
 <script src="./js/jQuery.js" charset="utf-8"></script>
 <script src="./js/app.js" charset="utf-8"></script>
 <script src="./js/epianoCtrl.js" charset="utf-8"></script>
+<script src="./js/controllers/tutorialCtrl.js" charset="utf-8"></script>
+<script src="./js/controllers/listenCtrl.js" charset="utf-8"></script>
 <script src="./js/servic.js" charset="utf-8"></script>
 <script src="./js/tutorialDirective.js" charset="utf-8"></script>
+
 
 
   </body>

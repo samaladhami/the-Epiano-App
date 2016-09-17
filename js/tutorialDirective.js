@@ -2,6 +2,8 @@ angular.module('ePiano')
 .directive('tutorialDirective', function() {
   return {
     restrict: 'E',
-    templateUrl: ''
+    templateUrl: './js/templates/videoTemp.html'
+
+
   }
 })
