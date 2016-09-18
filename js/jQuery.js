@@ -8,12 +8,15 @@ $( document ).ready(function (){
 
   	var keycode = (event.keyCode ? event.keyCode : event.which);
 
-//the keypress
+// the keypress
     if(keycode == '81' || keycode == '113'){
       $('#C').click();
       $('#C').css('background-color','#fd9595')
       $(this).keyup(function() {
+
+
         $('#C').css('background-color','#f5f5f5')
+
       })
   	}
 
@@ -21,7 +24,7 @@ $( document ).ready(function (){
     else if(keycode == '50'){
       $('#CS').click();
       $('#CS').css('background-color','#4e5077')
-      
+
       $(this).keyup(function() {
         $('#CS').css('background-color','#000')
       })
@@ -211,7 +214,6 @@ $( document ).ready(function (){
       console.log(keycode);
 
   });
-
 
 
 })
