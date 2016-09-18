@@ -118,8 +118,9 @@ section {
 .piano-div{
   padding-top: 199px;
   padding-bottom: 122px;
-  padding-top: 200px;
-  padding-bottom: 250px;
+  padding-top: 139px;
+  padding-bottom: 80px;
+  margin-top: 60px;
 
 }
 .piano-dash-bord{
@@ -132,6 +133,14 @@ section {
   align-items: center;
   display: flex;
 }
+.piano-dash-bord h3{
+  text-shadow: 2px 2px rgb(0, 0, 0);
+    font-family: fantasy;
+    color: rgba(146, 144, 144, 0.21);
+}
+
+
+
 .speakerR{
   width:: 90%;
 
@@ -264,7 +273,7 @@ section {
 }
 /*the piano style ends here*/
 
-/* the styles form itunes app */
+/* the listen styles app */
 .gridStyle {
   border: 1px solid rgb(212,212,212);
   width: 100%;
@@ -325,7 +334,38 @@ section {
 }
 
 
-/* the itunes style ends here */
+/* the listen style ends here */
+.main-about{
+  padding-top: 101px;
+    padding-bottom: 184px;
+}
+.main-about > img {
+  width: 17%;
+  padding-top: 69px;
+}
+
+
+
+
+
+.about{
+  color: rgba(255 , 255, 255, 0.8);
+  font-family: cursive;
+  -webkit-box-shadow: 0 4px 25px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 4px 25px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 25px 3px rgba(0, 0, 0, 0.5);
+  background-color: rgba(23, 40, 251, 0.14);
+  margin-top: -41px;
+  padding-top: 20px;
+}
+
+
+.about>h1{
+  text-shadow: 2px 2px rgba(10, 31, 78, 0.7);
+      font-family: fantasy;
+}
+
+
 
 
 

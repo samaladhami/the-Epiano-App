@@ -3,12 +3,12 @@ angular.module('ePiano')
 
   // the listen method stats hrer
 
-  this.getAetist = function (artist) {
+  this.getpiano = function (pianest) {
       var dfd = $q.defer();
 
       $http({
         method: 'JSONP',
-        url:'https://itunes.apple.com/search?term=' + artist + '&callback=JSON_CALLBACK'
+        url:'https://itunes.apple.com/search?term=' + pianest + '&callback=JSON_CALLBACK'
 
       }).then(function (result){
 
@@ -16,7 +16,7 @@ angular.module('ePiano')
         var dataArr = [];
         for (var i = 0 ; i < result.data.results.length ; i++) {
           var theResult = result.data.results;
-          var songData = {
+          var pianoData = {
 
 
               Artist: theResult[i].artistName
@@ -25,7 +25,7 @@ angular.module('ePiano')
               ,Play: theResult[i].previewUrl
 
           }
-          dataArr.push(songData)
+          dataArr.push(pianoData)
 
         }
         dfd.resolve(dataArr);

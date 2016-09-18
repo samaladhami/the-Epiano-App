@@ -3,7 +3,7 @@ angular.module('ePiano')
 
 
   $scope.gridOptions = {
-    data: 'songData',
+    data: 'pianoData',
     height: '110px',
     sortInfo: {fields: ['Song', 'Artist'], directions: ['asc']},
     columnDefs: [
@@ -17,14 +17,14 @@ angular.module('ePiano')
 
 
 
-  $scope.getSongData = function (artist) {
-    service.getAetist(artist)
+  $scope.getPianoData = function (pianest) {
+    service.getpiano(pianest)
     .then(function (result) {
       console.log(result);
-      $scope.songData = result;
+      $scope.pianoData = result;
 
     })
   }
-  $scope.getSongData('George Gershwin piano');
+  $scope.getPianoData('George Gershwin piano');
 
 })
