@@ -16,8 +16,15 @@ $( document ).ready(function (){
       ,keycode === 46,keycode === 47
     ]
 
+    var blackKeysArr = [
+      keycode === 50,keycode === 51,keycode === 53,keycode === 54
+      ,keycode === 55,keycode === 103,keycode === 104,keycode === 107
+      ,keycode === 108,keycode === 59
+    ]
 
-    function whiteKeys () {
+
+
+    function playWhiteKeys () {
       for (var i = 0 ; i < whiteKeysArr.length ; i++) {
         if (whiteKeysArr[i]) {
 
@@ -32,15 +39,10 @@ $( document ).ready(function (){
       }
     }
 
-    whiteKeys()
+    playWhiteKeys()
 
-    var blackKeysArr = [
-      keycode === 50,keycode === 51,keycode === 53,keycode === 54
-      ,keycode === 55,keycode === 103,keycode === 104,keycode === 107
-      ,keycode === 108,keycode === 59
-    ]
 
-    function blackKeys () {
+    function playBlackKeys () {
       for (var i = 0 ; i < blackKeysArr.length ; i++) {
         if (blackKeysArr[i]) {
 
@@ -52,7 +54,7 @@ $( document ).ready(function (){
         }
       }
     }
-    blackKeys()
+    playBlackKeys()
 
 
       console.log(keycode);
