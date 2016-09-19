@@ -44,6 +44,7 @@ angular.module('ePiano')
   // this.cKey = new Audio("a1.wav");
   this.audio = document.createElement('audio');
   this.audio.src = './js/tones/1.wav'
+  
 
   this.audio2 = document.createElement('audio');
   this.audio2.src = './js/tones/2.wav'
