@@ -382,8 +382,7 @@ section {
 
 
 footer {
-  background-image: url('https://www.deluxeondemand.com/sites/default/files/footer-banner_1.jpg');
-  background-size: contain;
+  background-color: black;
   height: 20px;
   width: 100%;
   margin-top: 0;
