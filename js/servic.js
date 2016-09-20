@@ -37,14 +37,13 @@ angular.module('ePiano')
     }
 
 
-//the listen method ends here
 
 
 
 
-  this.audio = new Howl({src:['./js/tones/1.wav']
-,})
 
+
+  this.audio = new Howl({src:['./js/tones/1.wav']})
 
   this.audio2 = new Howl({src:['./js/tones/2.wav']})
 
